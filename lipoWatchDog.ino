@@ -2,7 +2,7 @@
 #define buzzerPIN 3
 
 //Voltage settings
-float const refVoltage = 4950; //This is the voltage (mv) between +5 and gnd that the ADC will use
+float const refVoltage = 4950; //This is the voltage (mv) between +5 and gnd that the ADC will use. Mesure the voltage across +5 and Gnd and update this value
 float const analogMax = 1024; //It is a 10 bit ADC so 2^10
 float const vStep = refVoltage/analogMax; //Each step mv value
 float const Rtot = 55000; // Voltage divider values. Rtot is R1 + R2
